@@ -1,0 +1,119 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+     <link rel="stylesheet" href="ordercs.css">
+     <link rel="Shortcut icon" href="logo.png" type="image/x.icon">
+</head>
+<body>
+    <!-- <nav class="navbar">
+        <ul class="nav-links">
+          <li><a href="lg.html">HOME</a></li>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="about_us.html">ABOUT US</a></li>
+          <li><a href="suggestion.html">SUGGESTION</a></li>
+        </ul>
+      </nav> -->
+
+    <h2>Personal Information</h2>
+    <form id="hostel-form">
+        <!-- Name -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+
+        <!-- Phone Number (Mandatory) -->
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required class="quantity"  minlength="10" maxlength="10" >
+
+        <!-- Hostel Name -->
+        <label for="hostel">Hostel Name:</label>
+        <input type="text" id="hostel" name="hostel" placeholder="Enter your hostel name">
+
+        <!-- Room Number -->
+        <label for="room">Room Number:</label>
+        <input type="text" id="room" name="room" placeholder="Enter your room number">
+
+        <!-- Next Button -->
+        <button type="button" id="next-button" name="button">Next</button>
+    </form>
+
+    <h2>Menu List</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Select</th>
+                <th>S.No</th>
+                <th>Dish Name</th>
+                <th>Price (₹)</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" class="menu-item" data-dish="Paneer Butter Masala" data-price="160"></td>
+                <td>1</td>
+                <td>Paneer Butter Masala</td>
+                <td>160</td>
+                <td><input type="number" class="quantity" value="1" min="1"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="menu-item" data-dish="Chicken Biryani" data-price="160"></td>
+                <td>2</td>
+                <td>Chicken Biryani</td>
+                <td>160</td>
+                <td><input type="number" class="quantity" value="1" min="1"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="menu-item" data-dish="Veg Pulao" data-price="90"></td>
+                <td>3</td>
+                <td>Veg Pulao</td>
+                <td>90</td>
+                <td><input type="number" class="quantity" value="1" min="1"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="menu-item" data-dish="Butter Naan" data-price="30"></td>
+                <td>4</td>
+                <td>Butter Naan</td>
+                <td>30</td>
+                <td><input type="number" class="quantity" value="1" min="1"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="menu-item" data-dish="Gulab Jamun" data-price="20"></td>
+                <td>5</td>
+                <td>Gulab Jamun</td>
+                <td>20</td>
+                <td><input type="number" class="quantity" value="1" min="1"></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox" class="menu-item" data-dish="Thums Up" data-price="20"></td>
+                <td>5</td>
+                <td>Thums up</td>
+                <td>40</td>
+                <td><input type="number" class="quantity" value="1" min="1"></td>
+            </tr>
+        </tbody>
+    </table>
+    <form method="post">
+    <div class="summary-box" id="summary-box" style="display:none;">
+        <h3>Order Summary</h3>
+        <p><strong>Name:</strong> <span id="summary-name"></span></p>
+        <p><strong>Phone Number:</strong> <span id="summary-phone"></span></p>
+        <p><strong>Hostel Name:</strong> <span id="summary-hostel"></span></p>
+        <p><strong>Room Number:</strong> <span id="summary-room"></span></p>
+        <h4>Selected Items:</h4>
+        <ul id="selected-items"></ul>
+        <p class="total-price">Total Price: ₹<span id="total-price"></span></p>
+        <button type="button" id="pay-button">Pay</button>
+    </div>
+    </form>
+    <!-- <form id="hostel-form" action="/submit" method="post">
+        <!-- Form fields... -->
+        <!-- Add a hidden input field for menu data -->
+        <!-- <input type="hidden" id="menu-data" name="menu">
+        <button type="submit" id="next-button" name="button">Next</button>
+    </form> --> -->
+    
+</body>
+<script src="orderj.js"></script>>
+</html>
