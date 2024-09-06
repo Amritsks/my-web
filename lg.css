@@ -1,0 +1,191 @@
+ /* Basic Reset */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* Body Styling */
+  body {
+    font-family: Arial, sans-serif;
+    background-image: url('lgb.jpg');
+
+  }
+
+  /* Navigation Bar Styling */
+  .navbar {
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #45260d; 
+    padding: 10px 20px;
+  }
+
+  .navbar .nav-links {
+    display: flex;
+    list-style: none;
+  }
+
+  .navbar .nav-links li {
+    margin: 0 15px;
+  }
+
+  .navbar .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .navbar .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  /* Order Button Styling */
+  .order-button {
+    background-color: white;
+    color: #fc8019;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+    
+  }
+
+  .order-button:hover {
+    background-color: #ffe6cc;
+
+  }
+
+  /* Content Sections */
+  .section {
+    padding: 50px;
+    text-align: center;
+  }
+
+  #home {
+    background-color: #f2f2f2;
+  }
+
+  #menu {
+    background-color: #e6e6e6;
+  }
+
+  #about {
+    background-color: #f2f2f2;
+  }
+
+  #contact {
+    background-color: #e6e6e6;
+  }
+
+
+  
+
+  /* Background Image for the Entire Body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('lgb.jpg'); /* Replace 'your-image-path.jpg' with the path to your background image */
+  background-size: cover; /* Ensures the background image covers the entire screen */
+  background-position: center; /* Centers the background image */
+  background-attachment: fixed; /* Makes the background stay fixed when scrolling */
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+}
+
+/* Style for the Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7); /* Slightly transparent background for the navbar */
+  padding: 15px 30px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style-type: none;
+}
+
+.nav-links li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #f0a500;
+}
+
+.order-button {
+  background-color: #f0a500;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.order-button:hover {
+  background-color: #be984c;
+}
+
+/* Section Styling */
+.section {
+  padding: 100px 50px;
+  color: white;
+}
+
+#home {
+  background-image: url("lgb1.jpg");
+  text-align: center;
+  padding-top: 150px;
+}
+
+
+#menu, #about, #contact {
+  background-color: rgba(0, 0, 0, 0.5); /* Adds a slight background color to the sections */
+  margin-top: 50px;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+/* Image Styling */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* For Responsiveness */
+@media (max-width: 768px) {
+  .navbar {
+      flex-direction: column;
+  }
+  
+  .nav-links {
+      text-align: center;
+  }
+  
+  .nav-links li {
+      display: block;
+      margin-bottom: 10px;
+  }
+  
+  .section {
+      padding: 50px 20px;
+  }
+}
